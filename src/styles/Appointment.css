@@ -9,6 +9,7 @@
   background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230905/pngtree-an-alarm-clock-sitting-next-to-a-red-calendar-image_13226363.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .appointment-form {
@@ -16,9 +17,8 @@
   padding: 30px;
   border-radius: 8px;
   width: 100%;
-  height: 80%;
+  height: auto;
   max-width: 1000px;
-  max-height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,11 +30,12 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 2px white;
 }
 
 .appointment-form input,
 .appointment-form button {
-  width: 50%;
+  width: 60%;
   padding: 12px;
   margin-bottom: 20px; 
   border: 1px solid #ccc;
@@ -42,11 +43,7 @@
   font-size: 1rem;
 }
 
-.appointment-form input[type="text"] {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-}
-
+.appointment-form input[type="text"],
 .appointment-form input[type="date"],
 .appointment-form input[type="time"] {
   background-color: rgba(255, 255, 255, 0.9);
@@ -60,7 +57,6 @@
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
-  margin-bottom: 20px; 
 }
 
 .appointment-form button:hover {
@@ -75,13 +71,14 @@
 .schedule {
   font-size: 1.3rem;
   font-weight: bolder;
-  color:black;
+  color: black;
   background-color: rgba(255, 255, 255, 0.6);
   text-shadow: 1px 1px 2px white, 0 0 0.2em white, 0 0 0.1em white;
   text-align: center;
   margin-top: 20px;
 }
 
+/* Tablet View */
 @media screen and (max-width: 768px) {
   .appointment-form {
     padding: 20px;
@@ -90,5 +87,35 @@
 
   .appointment-form h1 {
     font-size: 2rem;
+  }
+
+  .appointment-form input,
+  .appointment-form button {
+    width: 80%;
+  }
+
+  .schedule {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .appointment-form {
+    padding: 15px;
+  }
+
+  .appointment-form h1 {
+    font-size: 1.6rem;
+  }
+
+  .appointment-form input,
+  .appointment-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .schedule {
+    font-size: 1rem;
   }
 }
