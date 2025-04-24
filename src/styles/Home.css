@@ -1,0 +1,64 @@
+.home-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/500/690/non_2x/doctors-uniform-realistic-background-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+
+  .home-page h1 {
+    margin-left: -45rem;
+    margin-top: 2rem;
+    color: red;
+    text-shadow: 1px 1px 2px white, 0 0 0.2em white, 0 0 0.1em white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  
+  .home-page .para {
+    color: black;
+    text-shadow: 1px 1px 2px white, 0 0 0.2em white, 0 0 0.1em white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-left: -45rem;
+    line-height: 2.5;
+    max-width: 40%;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  .home-page button {
+    background-color: green;
+    color: white;
+    border-radius: 9rem;
+    margin-left: -45rem;
+    margin-top: 2rem;
+    height: 4rem;
+    width: 12rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .home-page button:hover {
+    background-color: red;
+    transform: scale(1.05);
+  }
+  

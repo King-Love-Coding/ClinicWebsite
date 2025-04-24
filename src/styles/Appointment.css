@@ -1,0 +1,94 @@
+.appointment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230905/pngtree-an-alarm-clock-sitting-next-to-a-red-calendar-image_13226363.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.appointment-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  max-width: 1000px;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-form h1 {
+  color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointment-form input,
+.appointment-form button {
+  width: 50%;
+  padding: 12px;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.appointment-form input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.appointment-form button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; 
+}
+
+.appointment-form button:hover {
+  background-color: #45a049;
+}
+
+.appointment-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.schedule {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color:black;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 2px white, 0 0 0.2em white, 0 0 0.1em white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .appointment-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .appointment-form h1 {
+    font-size: 2rem;
+  }
+}
